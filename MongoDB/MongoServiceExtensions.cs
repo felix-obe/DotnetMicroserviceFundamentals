@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using MongoDB.Driver;
 
-namespace ServiceBase.MongoDB;
+namespace DotnetMicroServiceFundamentals.MongoDB;
 
 public static class MongoServiceExtensions
 {
@@ -14,13 +14,13 @@ public static class MongoServiceExtensions
 
         // Validate the connection string
         if (string.IsNullOrEmpty(mongoConnectionString))
-        {
             throw new ArgumentException("MongoDB connection string is not configured properly.");
-        }
 
         // Replace the placeholder with the actual password if provided
-        mongoConnectionString = !string.IsNullOrEmpty(mongoPassword) ? mongoConnectionString.Replace("<password>", mongoPassword) :
-            
+        mongoConnectionString = !string.IsNullOrEmpty(mongoPassword)
+            ? mongoConnectionString.Replace("<password>", mongoPassword)
+            :
+
             // If no password is provided, ensure there is no placeholder in the connection string
             mongoConnectionString.Replace(":<password>", string.Empty);
 

@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using StackExchange.Redis;
 
-namespace ServiceBase.Redis;
+namespace DotnetMicroServiceFundamentals.Redis;
 
 public static class RedisServiceExtensions
 {
@@ -12,9 +12,7 @@ public static class RedisServiceExtensions
 
         // Validate the connection string
         if (string.IsNullOrEmpty(redisConnectionString))
-        {
             throw new ArgumentException("Redis connection string is not configured properly.");
-        }
 
         // Create a ConnectionMultiplexer and add it to the services
         var redis = ConnectionMultiplexer.Connect(redisConnectionString);

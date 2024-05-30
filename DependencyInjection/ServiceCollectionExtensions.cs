@@ -1,12 +1,13 @@
 ﻿using System.Reflection;
+using DotnetMicroServiceFundamentals.DependencyInjection.Attribute;
 using Microsoft.Extensions.DependencyInjection;
-using ServiceBase.DependencyInjection.Attribute;
 
-namespace ServiceBase.DependencyInjection;
+namespace DotnetMicroServiceFundamentals.DependencyInjection;
 
 public static class ServiceCollectionExtensions
 {
-    public static IServiceCollection AddImplementations(this IServiceCollection services, params System.Reflection.Assembly[] assemblies)
+    public static IServiceCollection AddImplementations(this IServiceCollection services,
+        params System.Reflection.Assembly[] assemblies)
     {
         foreach (var assembly in assemblies)
         {
@@ -19,9 +20,7 @@ public static class ServiceCollectionExtensions
                 var attributes = interfaceType.GetCustomAttributes<ImplementsOfAttribute>();
 
                 foreach (var attribute in attributes)
-                {
                     services.AddTransient(interfaceType, attribute.ImplementationType);
-                }
             }
         }
 

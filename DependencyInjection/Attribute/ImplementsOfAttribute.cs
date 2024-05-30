@@ -1,12 +1,12 @@
-﻿namespace ServiceBase.DependencyInjection.Attribute;
+﻿namespace DotnetMicroServiceFundamentals.DependencyInjection.Attribute;
 
-[AttributeUsage(AttributeTargets.Interface, Inherited = false, AllowMultiple = true)]
+[AttributeUsage(AttributeTargets.Interface, AllowMultiple = true)]
 public sealed class ImplementsOfAttribute : System.Attribute
 {
-    public Type ImplementationType { get; }
-
     public ImplementsOfAttribute(Type implementationType)
     {
         ImplementationType = implementationType;
     }
+
+    public Type ImplementationType { get; }
 }
