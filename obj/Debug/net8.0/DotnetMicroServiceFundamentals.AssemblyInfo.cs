@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("DotnetMicroServiceFundamentals")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Felix Oberressl")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("Fundamental helpers for microservices")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0-pre-1+08336f5129a93d9acdd6025dec215a4f8086438d")]
 [assembly: System.Reflection.AssemblyProductAttribute("DotnetMicroServiceFundamentals")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DotnetMicroServiceFundamentals")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

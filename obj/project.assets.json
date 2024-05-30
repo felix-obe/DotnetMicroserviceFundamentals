@@ -2607,7 +2607,7 @@
     "C:\\Users\\gamem\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.0.0-pre-1",
     "restore": {
       "projectUniqueName": "C:\\Users\\gamem\\RiderProjects\\DotnetMicroServiceFundamentals\\DotnetMicroServiceFundamentals.csproj",
       "projectName": "DotnetMicroServiceFundamentals",
