@@ -8,11 +8,11 @@ public static class RedisServiceExtensions
 {
     public static IServiceCollection AddRedis(this IServiceCollection services, IConfiguration configuration)
     {
-        var redisConnectionString = Environment.GetEnvironmentVariable("CONFIG_REDIS_CONNECTION");
+        var redisConnectionString = Environment.GetEnvironmentVariable("REDIS_CONNECTION");
 
         // Validate the connection string
         if (string.IsNullOrEmpty(redisConnectionString))
-            throw new ArgumentException("Redis connection string is not configured properly.");
+            throw new ArgumentException("Redis connection string is not configured properly, make sure REDIS_CONNECTION environment variable is set.");
 
         // Create a ConnectionMultiplexer and add it to the services
         var redis = ConnectionMultiplexer.Connect(redisConnectionString);
