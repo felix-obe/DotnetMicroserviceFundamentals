@@ -279,7 +279,7 @@ myService?.DoSomething();
 ```
 
 With this setup, any interface decorated with `[ImplementsOf]` will automatically have its implementation registered with the dependency injection container, simplifying the process of managing dependencies in your .NET projects.
-
 ## License
 
----
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
