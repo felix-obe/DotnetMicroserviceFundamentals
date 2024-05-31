@@ -6,8 +6,10 @@
         <Nullable>enable</Nullable>
         <Description>Fundamental helpers for microservices</Description>
         <PackageId>DotnetMicroServiceFundamentals</PackageId>
-        <Version>1.0.0-pre-1.0.1</Version>
+        <Version>1.0.0-pre-1.0.2</Version>
         <Authors>Felix Oberressl</Authors>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/felix-obe/DotnetMicroserviceFundamentals</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 

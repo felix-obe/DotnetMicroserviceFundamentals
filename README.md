@@ -10,6 +10,7 @@ dotnet add package DotnetMicroServiceFundamentals
 ## Overview
 
 This library provides easy-to-use extension methods to configure Redis and MongoDB connections in your .NET microservices.
+It also offers a quick and easy to use way for dependency injection.
 
 ## Configuration
 
@@ -279,6 +280,10 @@ myService?.DoSomething();
 ```
 
 With this setup, any interface decorated with `[ImplementsOf]` will automatically have its implementation registered with the dependency injection container, simplifying the process of managing dependencies in your .NET projects.
+
+## TODO
+ExecuteOnStartup and ExecuteOnEvent attribute.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
