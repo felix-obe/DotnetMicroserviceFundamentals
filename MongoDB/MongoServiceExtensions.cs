@@ -9,8 +9,8 @@ public static class MongoServiceExtensions
     public static IServiceCollection AddMongoDb(this IServiceCollection services, IConfiguration configuration)
     {
         // Get MongoDB connection string and password from configuration
-        var mongoConnectionString = Environment.GetEnvironmentVariable("MONGO_CONNECTION_STRING");
-        var mongoPassword = Environment.GetEnvironmentVariable("MONGO_PASSWORD");
+        var mongoConnectionString = Environment.GetEnvironmentVariable("CONFIG_MONGO_CONNECTION_STRING");
+        var mongoPassword = Environment.GetEnvironmentVariable("CONFIG_MONGO_PASSWORD");
 
         // Validate the connection string
         if (string.IsNullOrEmpty(mongoConnectionString))

@@ -8,7 +8,7 @@ public static class RedisServiceExtensions
 {
     public static IServiceCollection AddRedis(this IServiceCollection services, IConfiguration configuration)
     {
-        var redisConnectionString = Environment.GetEnvironmentVariable("REDIS_CONNECTION");
+        var redisConnectionString = Environment.GetEnvironmentVariable("CONFIG_REDIS_CONNECTION");
 
         // Validate the connection string
         if (string.IsNullOrEmpty(redisConnectionString))
